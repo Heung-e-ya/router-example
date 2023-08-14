@@ -4,7 +4,7 @@ const [authenticate, setAuthenticate] = useState(false);
   const PrivateRoute = () => {
     return authenticate == true ? <UserPage /> : <Navigate to="/login" />; <- 로그인이 false일 경우 return login 페이지로 이동
 
-    // <Navigate to="/login" /> 네비게이트 사용법 to 경로
+  // <Navigate to="/login" /> 네비게이트 사용법 to 경로
   };
 //useNavigate 사용법 
  const navigate = useNavigate();
